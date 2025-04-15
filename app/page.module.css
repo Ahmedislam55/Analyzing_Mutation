@@ -1,0 +1,32 @@
+.loadingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+  }
+  .spinner {
+    font-size: 3rem;
+    animation: spin 1s linear infinite;
+    color: #fff;
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes opacity {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .head{
+    opacity: 0;
+    animation: opacity 2s forwards ease-out; 
+  }
